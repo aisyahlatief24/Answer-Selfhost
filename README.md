@@ -21,9 +21,33 @@ Kebutuhan Sistem
 
 Proses Instalasi:
 
-'''bash
-bdjkabvbj'''
+1. Login kedalam server menggunakan SSH.
+   
+```bash
+ssh ondeonde@20.196.129.189
+```
+2. Memastikan paket sistem yang digunakan up-to-date dan install kebutuhan sistem
 
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install docker.io docker-compose -y
+```
+
+3. Aktifkan Docker service dan jalankan
+ ```bash
+sudo systemctl enable docker --now
+```
+
+4. Mengambil kode Apche Answer dari Github ke VM 
+ ```bash
+git clone https://github.com/apache/answer.git
+cd answer
+```
+
+5. Menjalankan Apache Answer di background dan cek status 
+```bash
+sudo docker-compose up -d
+```
 ## Konfigurasi (opsional)
 
 Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
