@@ -1,16 +1,28 @@
-# Aplikasi Web "XYZ"
+# Apache Answer-Selfhosted
 
 
-## Sekilas Tentang
+## Sekilas Tentang Apache Answer
 
-Deskripsi singkat tentang aplikasi tsb.
+Apache Answer adalah aplikasi Q&A (Question and Answer platform) mirip dengan Stack Overflow namun bersifat self-hosted.
+Aplikasi ini mendukung sistem pertanyaan, jawaban, komentar, voting, dan tag sehingga cocok digunakan untuk membangun forum diskusi internal maupun komunitas publik.
 
+Fitur utama:
+- Posting pertanyaan & jawaban
+- Sistem voting (upvote & downvote)
+- Tagging untuk pengelompokan topik
+- Login via email maupun integrasi OAuth (Google, GitHub, dsb)
+- Panel admin untuk mengatur user & konten
 
 ## Instalasi
 
-- Prasyarat, apa saja yang harus diinstal sebelumnya.
+Kebutuhan Sistem
+- Unix, Linux atau Windows. 
 - Langkah instalasi dalam CLI.
 
+Proses Instalasi:
+
+'''bash
+bdjkabvbj'''
 
 ## Konfigurasi (opsional)
 
