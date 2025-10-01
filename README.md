@@ -53,6 +53,12 @@ cd answer
 ```bash
 sudo docker-compose up -d
 ```
+
+6. Verifikasi container Docker yang sedang berjalan
+```bash
+sudo docker ps
+```
+
 ## Konfigurasi (opsional)
 
 Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
