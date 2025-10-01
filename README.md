@@ -53,6 +53,58 @@ cd answer
 ```bash
 sudo docker-compose up -d
 ```
+
+. Masuk ke server VM Azure lewat SSH sebagai user ondeonde
+```bash
+ssh ondeonde@20.196.129.189
+```
+
+. Update daftar paket di Ubuntu biar versi software terbaru terdaftar
+```bash
+sudo apt update
+```
+
+. Cek proses apa yang sedang memakai port 80 (biasanya Nginx atau
+Apache).
+```bash
+sudo lsof -i:80
+```
+
+Matikan Nginx (karena dia pakai port 80 dan bentrok dengan Apache).
+```bash
+sudo systemctl stop nginx
+```
+
+.Menyalakan Apache supaya bisa ambil alih port 80
+```bash
+sudo systemctl start apache2
+```
+
+.Pasang SSL gratis dari Let's Encrypt untuk domain
+tanya.lontongsagu.web.id dan otomatis konfigurasi di Apache
+```bash
+sudo certbot --apache -d
+tanya.lontongsagu.web.id
+```
+
+.Edit konfigurasi VirtualHost SSL Apache untuk menambahkan
+pengaturan (misalnya proxy ke port 9080)
+```bash
+sudo nano /etc/apache2/sites-enabled/ee8-
+default-le-ssl.conf
+```
+
+.Tes apakah konfigurasi Apache valid (cek syntax error)
+```bash
+sudo apache2ctl configtest
+```
+
+.Tes apakah aplikasi kamu di port 9080 memang jalan, dengan request
+HTTP header saja.
+```bash
+curl -I http://localhost:9080
+```
+
 ## Konfigurasi (opsional)
 
 Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
