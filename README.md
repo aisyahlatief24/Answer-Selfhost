@@ -1,5 +1,6 @@
 # Apache Answer-Selfhosted
 
+<img width="1280" height="720" alt="lontongsagu" src="https://github.com/user-attachments/assets/93ca633c-5398-42e8-bcdd-1a02ea372521" />
 
 ## Sekilas Tentang Apache Answer
 
