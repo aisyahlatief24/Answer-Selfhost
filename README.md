@@ -104,6 +104,11 @@ Link : https://answer.apache.org/docs/installation
 <img width="667" height="308" alt="image" src="https://github.com/user-attachments/assets/7d6e9d15-fa62-48af-9be6-ca94a57487d0" />
 
 Setup Domain 
+
+Buka www.domainesia.com
+
+<img width="1600" height="1041" alt="image" src="https://github.com/user-attachments/assets/80349d22-834b-49e8-adfb-2b02898f4fa8" />
+
 <img width="1600" height="432" alt="image" src="https://github.com/user-attachments/assets/4e8e8290-d2a9-429a-bb83-5c9647176097" />
 
 
