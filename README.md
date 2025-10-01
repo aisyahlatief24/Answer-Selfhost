@@ -80,10 +80,13 @@ sudo docker ps
 Link : https://answer.apache.org/docs/installation
 <img width="1593" height="806" alt="image" src="https://github.com/user-attachments/assets/22f6d9fd-be83-44c0-a73d-e0c992e8942a" />
 8. Install steps Apache Answer
+   
    - Step 1: Choose the language
 <img width="939" height="365" alt="image" src="https://github.com/user-attachments/assets/dea3d4d0-ab97-41a6-97d9-8d27c06f8810" />
+
    - Step 2: Config database
 <img width="958" height="553" alt="image" src="https://github.com/user-attachments/assets/46575612-4037-4a83-b352-eacfe7698847" />
+
    - Step 3: Create configuration file
 <img width="934" height="379" alt="image" src="https://github.com/user-attachments/assets/09cf5bb8-94a2-4dfd-aac5-793af7ff5c08" />
 
