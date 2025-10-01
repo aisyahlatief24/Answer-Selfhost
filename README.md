@@ -23,17 +23,24 @@ Kebutuhan Sistem
 - Microsoft Azure
 - Apache
 - Ram minimal 
+
 Setup Server 
 1. Login Microsoft Azure (https://portal.azure.com/#home)
-2. klik Virtual Machines
+   
+3. klik Virtual Machines
 <img width="1599" height="619" alt="image" src="https://github.com/user-attachments/assets/2365e20c-d3fc-4094-b193-dbdd32735262" />
-3. klik Create
+
+4. klik Create
 <img width="1598" height="573" alt="image" src="https://github.com/user-attachments/assets/3d9bd87e-d660-435a-aecb-e5745b3de833" />
-4. klik virtual Machines
+
+5. klik virtual Machines
 <img width="1594" height="741" alt="image" src="https://github.com/user-attachments/assets/a685b377-57b0-4798-aefb-34fe63f64cef" />
-5. setting 
+
+6. setting 
 <img width="1328" height="717" alt="image" src="https://github.com/user-attachments/assets/05b0f3d8-9784-41aa-a7ed-eb7df6d623fa" />
+
 seperti dibawah ini
+
 <img width="1019" height="636" alt="image" src="https://github.com/user-attachments/assets/c6211b46-cb33-4b90-a2a9-6073f8220e0e" />
 
 
@@ -96,6 +103,8 @@ Link : https://answer.apache.org/docs/installation
    - Step 5: Complete
 <img width="667" height="308" alt="image" src="https://github.com/user-attachments/assets/7d6e9d15-fa62-48af-9be6-ca94a57487d0" />
 
+Setup Domain 
+<img width="1600" height="432" alt="image" src="https://github.com/user-attachments/assets/4e8e8290-d2a9-429a-bb83-5c9647176097" />
 
 
 ## Konfigurasi (opsional)
@@ -132,7 +141,7 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
 
 ## Pembahasan
-gjh
+
 - Pendapat anda tentang aplikasi web ini
     - kelebihan
     - kekurangan
