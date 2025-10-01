@@ -86,11 +86,13 @@ Link : https://answer.apache.org/docs/installation
 <img width="958" height="553" alt="image" src="https://github.com/user-attachments/assets/46575612-4037-4a83-b352-eacfe7698847" />
    - Step 3: Create configuration file
 <img width="934" height="379" alt="image" src="https://github.com/user-attachments/assets/09cf5bb8-94a2-4dfd-aac5-793af7ff5c08" />
+
    - Step 4: Fill in basic information
 <img width="674" height="640" alt="image" src="https://github.com/user-attachments/assets/47b75b89-44c7-4dde-8bf3-4196374ab1e8" />
+
    - Step 5: Complete
 <img width="667" height="308" alt="image" src="https://github.com/user-attachments/assets/7d6e9d15-fa62-48af-9be6-ca94a57487d0" />
-akan muncul tampilan
+
 
 
 ## Konfigurasi (opsional)
