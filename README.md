@@ -16,8 +16,12 @@ Fitur utama:
 ## Instalasi
 
 Kebutuhan Sistem
-- Unix, Linux atau Windows. 
+- Unix, Linux, MacOS atau Windows. 
 - Langkah instalasi dalam CLI.
+- Docker
+- Microsoft Azure
+- Apache
+- Ram minimal 
 
 Proses Instalasi:
 
