@@ -138,6 +138,7 @@ Network Setting
    
    <img width="1250" height="260" alt="image" src="https://github.com/user-attachments/assets/88336abf-6cd0-476b-9748-857b537969ee" />
 
+
 setting HTTP dan HTTPS di Commend Prompt
 
 1. login server 
