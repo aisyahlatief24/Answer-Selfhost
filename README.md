@@ -1,4 +1,4 @@
-# Apache Answer-Selfhosted
+Apache Answer-Selfhosted
 
 <img width="1280" height="720" alt="lontongsagu" src="https://github.com/user-attachments/assets/93ca633c-5398-42e8-bcdd-1a02ea372521" />
 
@@ -38,6 +38,8 @@ Setup Server
 
 6. setting 
 <img width="1328" height="717" alt="image" src="https://github.com/user-attachments/assets/05b0f3d8-9784-41aa-a7ed-eb7df6d623fa" />
+
+saran : gunakan password jika ingin mudah
 
 seperti dibawah ini
 
@@ -111,6 +113,65 @@ Buka www.domainesia.com
 
 <img width="1600" height="432" alt="image" src="https://github.com/user-attachments/assets/4e8e8290-d2a9-429a-bb83-5c9647176097" />
 
+Network Setting
+1. Buka Microsoft Azure -> login -> klik aerver yang telah kamu buat
+
+<img width="1253" height="707" alt="image" src="https://github.com/user-attachments/assets/e017336d-c59a-4ed8-a096-45206bddcbcc" />
+
+2. Pilih Network -> Network Setting
+   
+<img width="267" height="652" alt="image" src="https://github.com/user-attachments/assets/b3d73177-2431-418d-a51d-1e9b488bca3e" />
+
+3. Create New Port Rule
+
+   <img width="1595" height="642" alt="image" src="https://github.com/user-attachments/assets/11a921ca-9e3c-481b-8bde-c31e1c2f438d" />
+
+4. Pilih Inbound Port Rule
+
+   <img width="1587" height="303" alt="image" src="https://github.com/user-attachments/assets/5b17bb27-e278-4667-be0f-d83f99e167de" />
+
+   setting : untuk menambahkan http (80) dan https (443)
+   
+   <img width="579" height="687" alt="image" src="https://github.com/user-attachments/assets/ae204111-6a7d-49a5-95e6-478374f15eec" />
+   
+   akan muncul tampilan seperti dibawah ini :
+   
+   <img width="1250" height="260" alt="image" src="https://github.com/user-attachments/assets/88336abf-6cd0-476b-9748-857b537969ee" />
+
+setting HTTP dan HTTPS di Commend Prompt
+
+1. login server 
+Masuk ke server VM Azure lewat SSH sebagai user ondeonde.
+   ```bash
+   ssh ondeonde@20.196.129.189
+   ```
+   masukkan password jika menggunakan password saat membuat server
+   
+3. Pasang SSL gratis dari Let's Encrypt untuk domain tanya.lontongsagu.web.id dan otomatis konfigurasi SSL di Apache
+   ```bash
+   sudo apt update
+   sudo apt install certbot python3-certbot-nginx   # kalau pakai Nginx
+   sudo apt install certbot python3-certbot-apache  # kalau pakai Apache
+   ```
+4. Mengecek proses apa yang sedang memakai port  (biasanya Nginx atau Apache).
+   
+   ```bash
+   sudo lsof -i :80  # kalau http
+   sudo lsof -i :443 # kalau https
+   ```
+  
+5. Edit konfigurasi VirtualHost SSL untuk menambahkan ProxyPass ke aplikasi di port 9080 agar http(80) dan https(443) bisa di access.
+   ```bash
+   sudo nano /etc/apache2/sites-enabled/000-default-le-ssl.conf
+   ``` 
+   edit seperti dibawah ini
+   
+   <img width="770" height="597" alt="Screenshot 2025-09-26 065601" src="https://github.com/user-attachments/assets/7bbca66c-d66a-43ac-b5f1-21c9992d89a2" />
+
+6. Tes apakah konfigurasi Apache valid setelah semua perubahan.
+   ```bash
+   sudo apache2ctl configtest
+   ``` 
 
 ## Konfigurasi (opsional)
 
