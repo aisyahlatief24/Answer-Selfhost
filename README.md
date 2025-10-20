@@ -22,26 +22,26 @@ Kebutuhan Sistem
 - Docker
 - Microsoft Azure
 - Apache
-- Ram minimal 
+- Ram minimal 4
 
 Setup Server 
 1. Login Microsoft Azure (https://portal.azure.com/#home)
    
-3. klik Virtual Machines
+2. Klik Virtual Machines
 <img width="1599" height="619" alt="image" src="https://github.com/user-attachments/assets/2365e20c-d3fc-4094-b193-dbdd32735262" />
 
-4. klik Create
+3. Klik Create
 <img width="1598" height="573" alt="image" src="https://github.com/user-attachments/assets/3d9bd87e-d660-435a-aecb-e5745b3de833" />
 
-5. klik virtual Machines
+4. Klik virtual Machines
 <img width="1594" height="741" alt="image" src="https://github.com/user-attachments/assets/a685b377-57b0-4798-aefb-34fe63f64cef" />
 
-6. setting 
+5. Setting 
 <img width="1328" height="717" alt="image" src="https://github.com/user-attachments/assets/05b0f3d8-9784-41aa-a7ed-eb7df6d623fa" />
 
-saran : gunakan password jika ingin mudah
+Saran: gunakan password jika ingin mudah
 
-seperti dibawah ini
+seperti contoh dibawah ini
 
 <img width="1019" height="636" alt="image" src="https://github.com/user-attachments/assets/c6211b46-cb33-4b90-a2a9-6073f8220e0e" />
 
@@ -53,7 +53,7 @@ seperti dibawah ini
 
 Proses Instalasi:
 
-1. Login kedalam server menggunakan SSH.
+1. Login ke server menggunakan SSH.
    
 ```bash
 ssh ondeonde@20.196.129.189
@@ -130,18 +130,18 @@ Network Setting
 
    <img width="1587" height="303" alt="image" src="https://github.com/user-attachments/assets/5b17bb27-e278-4667-be0f-d83f99e167de" />
 
-   setting : untuk menambahkan http (80) dan https (443)
+   Setting : untuk menambahkan http (80) dan https (443)
    
    <img width="579" height="687" alt="image" src="https://github.com/user-attachments/assets/ae204111-6a7d-49a5-95e6-478374f15eec" />
    
-   akan muncul tampilan seperti dibawah ini :
+   Akan muncul tampilan seperti dibawah ini :
    
    <img width="1250" height="260" alt="image" src="https://github.com/user-attachments/assets/88336abf-6cd0-476b-9748-857b537969ee" />
 
 
-setting HTTP dan HTTPS di Commend Prompt
+Setting HTTP dan HTTPS di Commend Prompt
 
-1. login server 
+1. Login server 
 Masuk ke server VM Azure lewat SSH sebagai user ondeonde.
    ```bash
    ssh ondeonde@20.196.129.189
@@ -195,34 +195,76 @@ Plugin untuk fungsi tambahan
 - dll
 
 
-##  Maintenance (opsional)
-
-Setting tambahan untuk maintenance secara periodik, misalnya:
-- buat backup database tiap pekan
-- hapus direktori sampah tiap hari
-- dll
-
-
-## Otomatisasi (opsional)
-
-Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
-
-
 ## Cara Pemakaian
 
-- Tampilan aplikasi web
-- Fungsi-fungsi utama
-- Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
+1. Akses Halaman Web
+   Buka domain yang telah dikonfigurasi, contoh:
+```bash
+https://tanya.lontongsagu.web.id
+```
 
+2. Login/Registrasi
+- Pengguna baru dapat membuat akun melalui email atau login langsung dengan Google / GitHub (jika sudah diaktifkan).
+Tampilan user sign-in
+<img width="1919" height="828" alt="image" src="https://github.com/user-attachments/assets/47b76234-b801-4b18-b278-b111731f4148" />
+Tampilan user log-in
+<img width="1918" height="830" alt="image" src="https://github.com/user-attachments/assets/4322c203-e651-497e-a1c8-49000ba45561" />
 
+- Admin dapat menambahkan user langsung lewat panel admin.
+<img width="1896" height="836" alt="image" src="https://github.com/user-attachments/assets/45a93583-5e6c-4113-8207-bf51b58afbfc" />
+
+3. Membuat Pertanyaan/Ask a Question
+- Klik tombol "Create"
+- 
 ## Pembahasan
+Platform Apache Answer memberikan solusi praktis untuk membangun sistem tanya jawab seperti forum atau knowledge base internal.
 
-- Pendapat anda tentang aplikasi web ini
-    - kelebihan
-    - kekurangan
-- Bandingkan dengan aplikasi web lain yang sejenis
+Sebagai salah satu platform Q&A open source yang banyak digunakan untuk membangun forum tanya jawab mandiri, aplikasi ini menawarkan sejumlah kelebihan, di antaranya:
+-  Self-hosted & Open Source: kontrol penuh atas data dan tampilan aplikasi.
+- Fitur Q&A mirip Stack Overflow: Apache Answer mempunyai konsep forum tanya jawab modern, dengan sistem pertanyaan, jawaban, komentar, voting, serta tagging topik. Hal ini memudahkan komunitas dalam menemukan solusi secara cepat dan terstruktur.
+- Mendukung Integrasi OAuth: Aplikasi ini telah mendukung integrasi login menggunakan akun eksternal seperti Google dan GitHub, sehingga mempermudah pengguna untuk bergabung tanpa perlu registrasi manual.
+- Fleksibel: Tampilan Modern dan mudah dikustomisasi untuk menyesuaikan branding atau kebutuhan komunitas tertentu. Desain antarmuka Apache Answer bersih, responsif, dan mudah dipahami pengguna.
+- Cocok untuk Komunitas Internal Maupun Publik : Karena fleksibilitasnya, platform ini dapat digunakan untuk berbagai keperluan, mulai dari forum internal perusahaan, komunitas kampus, hingga forum publik yang berskala lebih besar.
+
+Sebuah aplikasi pasti juga memiliki kekurangan. Beberapa kekurangan yang dimiliki antara lain :
+- Butuh Konfigurasi Server: proses instalasi relatif teknis bagi pemula.
+- Fitur Tambahan Butuh Plugin: tidak semua fungsi tersedia default (misalnya analytics lanjutan, moderasi otomatis).
+- Performa Tergantung Server: jika menggunakan resource terbatas, bisa melambat saat banyak user aktif.
+
+Perbandingan dengan Aplikasi Stack Overflow dan Discourse
+1. Model Hosting dan Kepemilikan Data
+   
+   Apache Answer bersifat self-hosted, artinya pengguna atau organisasi dapat menginstal aplikasi di server mereka sendiri. Hal ini memberikan kontrol penuh atas data, keamanan, dan tampilan aplikasi.
+   
+   Stack Overflow adalah platform publik yang dikelola sepenuhnya oleh pihak ketiga, sehingga pengguna tidak memiliki kontrol atas infrastruktur dan penyimpanan data. Discourse, di sisi lain, menawarkan dua opsi: self-hosted dan layanan cloud berbayar. Dengan begitu, pengguna bisa memilih antara mengelola server sendiri atau menyewa hosting resmi.
+
+2. Fitur Q&A dan Diskusi
+   
+   Apache Answer dan Stack Overflow mengutamakan model Q&A di mana pengguna mengajukan pertanyaan, pengguna lain menjawab, memberi vote, dan menandai jawaban terbaik. Ini cocok untuk komunitas yang fokus pada pencarian solusi cepat dan terstruktur.
+Discourse punya gaya diskusi yang lebih menyerupai forum modern atau media sosial, di mana topik dibahas dalam bentuk thread panjang. Sistemnya lebih fleksibel, tapi kurang menonjolkan jawaban terbaik.
+
+3. Sistem Voting dan Tagging
+   
+   Voting dan tagging menjadi fitur penting dalam platform Q&A. Apache Answer dan Stack Overflow memiliki sistem voting naik-turun (upvote & downvote) serta tagging untuk mengelompokkan topik, sehingga pertanyaan populer dan relevan naik ke atas.
+   Discourse tidak memiliki sistem voting sepert dua platform tersebut. Pengguna hanya bisa memberi like dan membalas, yang membuat thread lebih “lancar” tapi kurang cocok untuk pengarsipan solusi teknis.
+   
+4. Kustomisasi dan Integrasi
+   
+   Apache Answer mendukung kustomisasi UI dan integrasi login OAuth (misalnya dengan Google atau GitHub) secara cukup fleksibel. Discourse juga memungkinkan banyak plugin dan tema yang bisa dipasang dengan mudah.
+Sebaliknya, Stack Overflow tidak memberi ruang kustomisasi untuk pengguna umum, karena semua tampilan dan fitur diatur oleh platform utama.
+
+5. Kebutuhan Infrastruktur
+   
+   Karena bersifat self-hosted, Apache Answer dan Discourse membutuhkan server, konfigurasi jaringan, serta domain untuk dijalankan. Stack Overflow tidak memerlukan hal-hal tersebut karena semua infrastruktur sudah disediakan oleh platformnya.
+   Namun, beban server Apache Answer tergolong ringan sehingga cocok untuk organisasi kecil dan komunitas menengah. Discourse membutuhkan resource lebih tinggi karena memiliki banyak fitur tambahan seperti notifikasi real-time dan thread dinamis.
+
+6. Kegunaan dan Target Pengguna
+   
+   Apache Answer cocok untuk komunitas internal perusahaan, organisasi, kampus, atau komunitas teknologi yang ingin punya sistem Q&A privat dan mandiri.
+   Stack Overflow cocok untuk publik luas, khususnya developer dan profesional IT, tetapi tidak dapat digunakan untuk membangun komunitas privat.
+  Discourse lebih baik untuk forum komunitas dan diskusi umum, misalnya klub hobi, forum kampus, atau komunitas open source.
 
 
 ## Referensi
-
-Cantumkan tiap sumber informasi yang anda pakai.
+- Repositori GitHub: https://github.com/apache/answer
+- Dokumentasi Resmi: https://answer.apache.org/docs/installation
