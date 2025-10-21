@@ -17,12 +17,12 @@ Fitur utama:
 ## Instalasi
 
 Kebutuhan Sistem
-- Unix, Linux, MacOS atau Windows. 
-- Langkah instalasi dalam CLI.
+- Unix, Linux, MacOS atau Windows
+- Langkah instalasi dalam CLI
 - Docker
 - Microsoft Azure
 - Apache
-- Ram minimal 4
+- RAM minimal 4
 
 Setup Server 
 1. Login Microsoft Azure (https://portal.azure.com/#home)
@@ -33,7 +33,7 @@ Setup Server
 3. Klik Create
 <img width="1598" height="573" alt="image" src="https://github.com/user-attachments/assets/3d9bd87e-d660-435a-aecb-e5745b3de833" />
 
-4. Klik virtual Machines
+4. Klik Virtual Machines
 <img width="1594" height="741" alt="image" src="https://github.com/user-attachments/assets/a685b377-57b0-4798-aefb-34fe63f64cef" />
 
 5. Setting 
@@ -41,7 +41,7 @@ Setup Server
 
 Saran: gunakan password jika ingin mudah
 
-seperti contoh dibawah ini
+seperti contoh di bawah ini
 
 <img width="1019" height="636" alt="image" src="https://github.com/user-attachments/assets/c6211b46-cb33-4b90-a2a9-6073f8220e0e" />
 
@@ -53,7 +53,7 @@ seperti contoh dibawah ini
 
 Proses Instalasi:
 
-1. Login ke server menggunakan SSH.
+1. Login ke server menggunakan SSH
    
 ```bash
 ssh ondeonde@20.196.129.189
@@ -70,7 +70,7 @@ sudo apt install docker.io docker-compose -y
 sudo systemctl enable docker --now
 ```
 
-4. Mengambil kode Apche Answer dari Github ke VM 
+4. Mengambil kode Apache Answer dari Github ke VM 
  ```bash
 git clone https://github.com/apache/answer.git
 cd answer
@@ -85,7 +85,7 @@ sudo docker-compose up -d
 ```bash
 sudo docker ps
 ```
-7. Kunjungi alamat IP web server kita untuk meneruskan instalasi.
+7. Kunjungi alamat IP web server kita untuk meneruskan instalasi
 Link : https://answer.apache.org/docs/installation
 <img width="1593" height="806" alt="image" src="https://github.com/user-attachments/assets/22f6d9fd-be83-44c0-a73d-e0c992e8942a" />
 8. Install steps Apache Answer
@@ -134,15 +134,15 @@ Network Setting
    
    <img width="579" height="687" alt="image" src="https://github.com/user-attachments/assets/ae204111-6a7d-49a5-95e6-478374f15eec" />
    
-   Akan muncul tampilan seperti dibawah ini :
+   Akan muncul tampilan seperti di bawah ini :
    
    <img width="1250" height="260" alt="image" src="https://github.com/user-attachments/assets/88336abf-6cd0-476b-9748-857b537969ee" />
 
 
-Setting HTTP dan HTTPS di Commend Prompt
+Setting HTTP dan HTTPS di Command Prompt
 
 1. Login server 
-Masuk ke server VM Azure lewat SSH sebagai user ondeonde.
+Masuk ke server VM Azure lewat SSH sebagai user ondeonde
    ```bash
    ssh ondeonde@20.196.129.189
    ```
@@ -154,32 +154,32 @@ Masuk ke server VM Azure lewat SSH sebagai user ondeonde.
    sudo apt install certbot python3-certbot-nginx   # kalau pakai Nginx
    sudo apt install certbot python3-certbot-apache  # kalau pakai Apache
    ```
-4. Mengecek proses apa yang sedang memakai port  (biasanya Nginx atau Apache).
+4. Mengecek proses apa yang sedang memakai port (biasanya Nginx atau Apache)
    
    ```bash
    sudo lsof -i :80  # kalau http
    sudo lsof -i :443 # kalau https
    ```
   
-5. Edit konfigurasi VirtualHost SSL untuk menambahkan ProxyPass ke aplikasi di port 9080 agar http(80) dan https(443) bisa di access.
+5. Edit konfigurasi VirtualHost SSL untuk menambahkan ProxyPass ke aplikasi di port 9080 agar http (80) dan https (443) bisa di-access
    ```bash
    sudo nano /etc/apache2/sites-enabled/000-default-le-ssl.conf
    ``` 
-   edit seperti dibawah ini
+   edit seperti di bawah ini
    
    <img width="770" height="597" alt="Screenshot 2025-09-26 065601" src="https://github.com/user-attachments/assets/7bbca66c-d66a-43ac-b5f1-21c9992d89a2" />
 
-6. Tes apakah konfigurasi Apache valid setelah semua perubahan.
+6. Tes apakah konfigurasi Apache valid setelah semua perubahan
    ```bash
    sudo apache2ctl configtest
    ```
-7. test  di Browaer
+7. Tes di Browser
    
 http  : http://tanya.lontongsagu.web.id
    
 https : https://tanya.lontongsagu.web.id
    
-tanpa semua yang diatas : tanya.lontongsagu.web.id
+tanpa semua yang di atas : tanya.lontongsagu.web.id
 
 
 ## Konfigurasi (opsional)
@@ -204,13 +204,13 @@ https://tanya.lontongsagu.web.id
 ```
 
 2. Login/Registrasi
-- Pengguna baru dapat membuat akun melalui email atau login langsung dengan Google / GitHub (jika sudah diaktifkan).
+- Pengguna baru dapat membuat akun melalui email atau login langsung dengan Google / GitHub (jika sudah diaktifkan)
 Tampilan user sign-in
 <img width="1919" height="828" alt="image" src="https://github.com/user-attachments/assets/47b76234-b801-4b18-b278-b111731f4148" />
 Tampilan user log-in
 <img width="1918" height="830" alt="image" src="https://github.com/user-attachments/assets/4322c203-e651-497e-a1c8-49000ba45561" />
 
-- Admin dapat menambahkan user langsung lewat panel admin.
+- Admin dapat menambahkan user langsung lewat panel admin
 
 3. Halaman Utama (Dashboard)
 
@@ -223,7 +223,7 @@ Pengguna bisa membuat pertanyaan baru dengan menekan tombol Create, kemudian men
 - Klik tombol "Create"
 
 5. Menjawab & Memberi Komentar
-- User lain dapat memberikan jawaban dan komentar pada pertanyaan.
+- User lain dapat memberikan jawaban dan komentar pada pertanyaan
 <img width="1918" height="788" alt="image" src="https://github.com/user-attachments/assets/2d4024d0-8f66-4043-90fc-5fa613531215" />
 <img width="1918" height="834" alt="image" src="https://github.com/user-attachments/assets/e63ecd21-d6d7-47ab-9efe-f7314e2a3b0c" />
 
@@ -239,7 +239,7 @@ Setiap pertanyaan dapat memiliki satu atau lebih tag, sehingga pengguna lebih mu
 7. Sistem Pengguna dan Peringkat
 
 Melalui menu Users, pengguna dapat melihat daftar anggota komunitas yang terdaftar, lengkap dengan reputasi dan badge yang telah diperoleh.
-Semakin aktif seorang pengguna berpartisipasi dalam forum (misalnya dengan menjawab, memberi vote, atau membuat pertanyaan berkualitas), maka reputasi dan penghargaan yang didapat akan semakin tinggi.
+Semakin aktif seorang pengguna berpartisipasi dalam forum (misalnya dengan menjawab, memberi vote, atau membuat pertanyaan berkualitas), maka reputasi dan penghargaan yang didapatkan akan semakin tinggi.
 <img width="1919" height="827" alt="image" src="https://github.com/user-attachments/assets/719a1124-a260-43e0-968a-be8cc5bc948e" />
 
 8. Fitur Badges (Penghargaan)
@@ -262,16 +262,16 @@ Beberapa jenis badge yang tersedia antara lain:
 Platform Apache Answer memberikan solusi praktis untuk membangun sistem tanya jawab seperti forum atau knowledge base internal.
 
 Sebagai salah satu platform Q&A open source yang banyak digunakan untuk membangun forum tanya jawab mandiri, aplikasi ini menawarkan sejumlah kelebihan, di antaranya:
--  Self-hosted & Open Source: kontrol penuh atas data dan tampilan aplikasi.
+-  Self-hosted & Open Source: kontrol penuh atas data dan tampilan aplikasi
 - Fitur Q&A mirip Stack Overflow: Apache Answer mempunyai konsep forum tanya jawab modern, dengan sistem pertanyaan, jawaban, komentar, voting, serta tagging topik. Hal ini memudahkan komunitas dalam menemukan solusi secara cepat dan terstruktur.
-- Mendukung Integrasi OAuth: Aplikasi ini telah mendukung integrasi login menggunakan akun eksternal seperti Google dan GitHub, sehingga mempermudah pengguna untuk bergabung tanpa perlu registrasi manual.
+- Mendukung Integrasi OAuth: Aplikasi ini telah mendukung integrasi login menggunakan akun eksternal seperti Google dan GitHub, sehingga mempermudah pengguna untuk bergabung tanpa perlu registrasi manual
 - Fleksibel: Tampilan Modern dan mudah dikustomisasi untuk menyesuaikan branding atau kebutuhan komunitas tertentu. Desain antarmuka Apache Answer bersih, responsif, dan mudah dipahami pengguna.
-- Cocok untuk Komunitas Internal Maupun Publik : Karena fleksibilitasnya, platform ini dapat digunakan untuk berbagai keperluan, mulai dari forum internal perusahaan, komunitas kampus, hingga forum publik yang berskala lebih besar.
+- Cocok untuk Komunitas Internal Maupun Publik: Karena fleksibilitasnya, platform ini dapat digunakan untuk berbagai keperluan, mulai dari forum internal perusahaan, komunitas kampus, hingga forum publik yang berskala lebih besar
 
-Sebuah aplikasi pasti juga memiliki kekurangan. Beberapa kekurangan yang dimiliki antara lain :
-- Butuh Konfigurasi Server: proses instalasi relatif teknis bagi pemula.
-- Fitur Tambahan Butuh Plugin: tidak semua fungsi tersedia default (misalnya analytics lanjutan, moderasi otomatis).
-- Performa Tergantung Server: jika menggunakan resource terbatas, bisa melambat saat banyak user aktif.
+Sebuah aplikasi pasti juga memiliki kekurangan. Beberapa kekurangan yang dimiliki antara lain:
+- Butuh Konfigurasi Server: proses instalasi relatif teknis bagi pemula
+- Fitur Tambahan Butuh Plugin: tidak semua fungsi tersedia default (misalnya analytics lanjutan, moderasi otomatis)
+- Performa Tergantung Server: jika menggunakan resource terbatas, bisa melambat saat banyak user aktif
 
 Perbandingan dengan Aplikasi Stack Overflow dan Discourse
 1. Model Hosting dan Kepemilikan Data
