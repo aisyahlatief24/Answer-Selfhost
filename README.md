@@ -211,11 +211,53 @@ Tampilan user log-in
 <img width="1918" height="830" alt="image" src="https://github.com/user-attachments/assets/4322c203-e651-497e-a1c8-49000ba45561" />
 
 - Admin dapat menambahkan user langsung lewat panel admin.
-<img width="1896" height="836" alt="image" src="https://github.com/user-attachments/assets/45a93583-5e6c-4113-8207-bf51b58afbfc" />
 
-3. Membuat Pertanyaan/Ask a Question
+3. Halaman Utama (Dashboard)
+
+Setelah login, pengguna akan diarahkan ke halaman utama yang menampilkan daftar pertanyaan terbaru dari komunitas. Di bagian atas terdapat menu navigasi untuk berpindah antara Questions, Tags, Users, dan Badges.
+Pengguna bisa membuat pertanyaan baru dengan menekan tombol Create, kemudian mengisi judul, isi pertanyaan, serta menambahkan tag agar mudah ditemukan oleh pengguna lain. 
+<img width="1919" height="829" alt="image" src="https://github.com/user-attachments/assets/f51ee356-7385-48ac-a13b-1a9e506d336e" />
+
+
+4. Membuat Pertanyaan/Ask a Question
 - Klik tombol "Create"
-- 
+
+5. Menjawab & Memberi Komentar
+- User lain dapat memberikan jawaban dan komentar pada pertanyaan.
+<img width="1918" height="788" alt="image" src="https://github.com/user-attachments/assets/2d4024d0-8f66-4043-90fc-5fa613531215" />
+<img width="1918" height="834" alt="image" src="https://github.com/user-attachments/assets/e63ecd21-d6d7-47ab-9efe-f7314e2a3b0c" />
+
+- Jawaban dapat diberi vote dan melihat jumlah tayangan pertanyaan
+<img width="1919" height="831" alt="image" src="https://github.com/user-attachments/assets/cbcd79b4-1f76-4b2f-864a-66107f657a6f" />
+
+6. Tag dan Kategorisasi
+
+Menu Tags berfungsi untuk menampilkan semua kategori topik yang ada di dalam forum.
+Setiap pertanyaan dapat memiliki satu atau lebih tag, sehingga pengguna lebih mudah menemukan topik sesuai minat atau bidang keahliannya.
+   <img width="1919" height="829" alt="image" src="https://github.com/user-attachments/assets/5c8dcf70-3f5b-454d-9c79-55e61ef7527e" />
+
+7. Sistem Pengguna dan Peringkat
+
+Melalui menu Users, pengguna dapat melihat daftar anggota komunitas yang terdaftar, lengkap dengan reputasi dan badge yang telah diperoleh.
+Semakin aktif seorang pengguna berpartisipasi dalam forum (misalnya dengan menjawab, memberi vote, atau membuat pertanyaan berkualitas), maka reputasi dan penghargaan yang didapat akan semakin tinggi.
+<img width="1919" height="827" alt="image" src="https://github.com/user-attachments/assets/719a1124-a260-43e0-968a-be8cc5bc948e" />
+
+8. Fitur Badges (Penghargaan)
+
+Bagian Badges menampilkan kumpulan penghargaan (achievement) yang diberikan kepada pengguna atas aktivitas tertentu di platform.
+Tujuannya adalah untuk memberikan motivasi dan apresiasi kepada pengguna aktif yang berkontribusi positif dalam komunitas.
+Beberapa jenis badge yang tersedia antara lain:
+
+- Getting Started: mencakup aktivitas awal pengguna, seperti membuat profil (Autobiographer), mengedit konten (Editor), memberi vote pertama (First Upvote), atau memberi reaksi (First Reaction).
+
+- Community: diberikan bagi pengguna yang membantu menyelesaikan pertanyaan, seperti Solved atau Scholar.
+
+- Posting: penghargaan untuk kualitas pertanyaan dan jawaban, seperti Good Answer, Great Answer, Nice Question, dan Great Question.
+
+- Badge-badge ini muncul otomatis ketika pengguna mencapai kriteria tertentu, dan dapat dilihat melalui ikon trophy di bagian atas halaman.
+<img width="1919" height="811" alt="image" src="https://github.com/user-attachments/assets/79b266fa-829f-4276-ac57-c68c6b352a69" />
+<img width="1903" height="833" alt="image" src="https://github.com/user-attachments/assets/e6d18c51-807f-4cdf-af85-7874002b892f" />
+
 ## Pembahasan
 Platform Apache Answer memberikan solusi praktis untuk membangun sistem tanya jawab seperti forum atau knowledge base internal.
 
@@ -264,6 +306,10 @@ Sebaliknya, Stack Overflow tidak memberi ruang kustomisasi untuk pengguna umum, 
    Stack Overflow cocok untuk publik luas, khususnya developer dan profesional IT, tetapi tidak dapat digunakan untuk membangun komunitas privat.
   Discourse lebih baik untuk forum komunitas dan diskusi umum, misalnya klub hobi, forum kampus, atau komunitas open source.
 
+## Kesimpulan
+
+Secara keseluruhan, Apache Answer memberikan pengalaman interaktif dan terstruktur dalam berbagi pengetahuan di komunitas.
+Dengan antarmuka yang sederhana, sistem voting, serta fitur badge yang memotivasi partisipasi, aplikasi ini sangat cocok digunakan untuk forum tanya jawab internal organisasi, komunitas kampus, maupun proyek open source.
 
 ## Referensi
 - Repositori GitHub: https://github.com/apache/answer
