@@ -280,11 +280,11 @@ Sebuah aplikasi pasti juga memiliki kekurangan. Beberapa kekurangan yang dimilik
 - Performa Tergantung Server: jika menggunakan resource terbatas, bisa melambat saat banyak user aktif
 
 lontongsagu Vs Quora Vs Reddit
-### 📊 Poin Perbandingan Utama
+### Poin Perbandingan Utama
 
 | Aspek                     | Apache Answer                                      | Quora                                                | Reddit                                                  |
 |---------------------------|---------------------------------------------------|------------------------------------------------------|----------------------------------------------------------|
-| Model hosting & kontrol   | Self-hosted → kontrol penuh atas data & tampilan   | Publik, dikontrol oleh platform Quora                | Publik, kontrol terbagi (komunitas + subreddit)          |
+| Model hosting & kontrol   | Self-hosted (kontrol penuh atas data & tampilan)   | Publik, dikontrol oleh platform Quora                | Publik, kontrol terbagi (komunitas + subreddit)          |
 | Fokus utama               | Pertanyaan & jawaban (forum Q&A)                   | Q&A formal & mendalam                                | Diskusi komunitas luas & spontan                         |
 | Struktur komunitas        | Tag, voting, komentar, moderasi sendiri            | Profil pengguna, jawaban & vote                      | Subreddit/topic, post & komentar, banyak ragam           |
 | Kustomisasi & branding    | Sangat fleksibel                                  | Terbatas (standar platform)                          | Terbatas untuk “branding sendiri” forum pribadi         |
