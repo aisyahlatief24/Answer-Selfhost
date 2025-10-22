@@ -5,6 +5,16 @@
 | [Sekilas Tentang Apache Answer](#sekilas-tentang-apache-answer) | [Instalasi](#instalasi) | [Konfigurasi (opsional)](#konfigurasi-opsional) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Kesimpulan](#kesimpulan) | [Referensi](#referensi) |
 |------------------------------------------------------------------|--------------------------|-----------------------------------------------|-----------------------------------|----------------------------|---------------------------|--------------------------|
 
+## Anggota Kelompok 2_R1
+
+| No | Nama Anggota                       | NIM           |
+|----|------------------------------------|---------------|
+| 1  | Mutia Saniya Rahma                | G6401231002    |
+| 2  | Quina Rizky Dae Yuena Siregar     | G6401231013    |
+| 3  | Danella Nur Aisyah Latief         | G6401231041    |
+| 4  | Ghanianda Wafiqarifah             | G6401231126    |
+| 5  | Winanci Zahrawaini Setiawan       | G6401231158    |
+
 
 ## Sekilas Tentang lontongsagu (Apache Answer)
 
