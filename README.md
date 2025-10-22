@@ -257,7 +257,13 @@ Pengguna bisa membuat pertanyaan baru dengan menekan tombol Create, kemudian men
 <img width="1919" height="829" alt="image" src="https://github.com/user-attachments/assets/f51ee356-7385-48ac-a13b-1a9e506d336e" />
 
 4. Membuat Pertanyaan/Ask a Question
-- Klik tombol "Create"
+   
+- Klik tombol "Create", tamahkan pertanyaan pada kolom yang disediakan
+![WhatsApp Image 2025-10-23 at 01 03 51_ed475030](https://github.com/user-attachments/assets/54ef66ba-9831-448b-9318-e0cc89d82e1c)
+
+- Tambahkan pula tag yang relevan untuk question yang sedang dibuat.
+![WhatsApp Image 2025-10-23 at 01 04 46_580c73ba](https://github.com/user-attachments/assets/332b6f41-5a1a-43d2-80c0-521a2c7c2617)
+
 
 5. Menjawab & Memberi Komentar
 - User lain dapat memberikan jawaban dan komentar pada pertanyaan
