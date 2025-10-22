@@ -27,6 +27,16 @@ lontongsagu (Apache Answer) adalah platform Q&A (Question and Answer) berbasis o
 - Sistem voting (upvote & downvote)
 - Tagging untuk pengelompokan topik pertanyaan
 - Badges, kumpulan achievement kegiatan user di platform
+### Sebagai Admin :
+- Mengelola pertanyaan, jawaban, dan komentar.
+- Menambahkan atau menghapus tag.
+- Mengatur pengguna (menambah, menonaktifkan akun, atau mengubah peran).
+- Melakukan konfigurasi sistem, seperti SMTP atau pengaturan tampilan.
+### Sebagai User :
+- Membuat dan menjawab pertanyaan.
+- Memberi komentar dan vote.
+- Mengikuti tag tertentu sesuai minat.
+- Mengedit profil pribadi.
 
 ## Instalasi
 
@@ -200,18 +210,25 @@ Tanpa semua yang di atas : tanya.lontongsagu.web.id
 
 [Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
 
-Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
-- batas upload file
-- batas memori
-- dll
-
-Plugin untuk fungsi tambahan
-- login dengan Google/Facebook
-- editor Markdown
-- dll
+![WhatsApp Image 2025-10-23 at 00 02 10_a75d3c2f](https://github.com/user-attachments/assets/303d6aa7-c18a-495c-885c-8f1cb4b51e85)
 
 
-## Cara Pemakaian
+  | Variabel         | Nilai Contoh          | Fungsi                                                   |
+  |-------------------|-----------------------|-----------------------------------------------------------|
+  | SMTP_HOST         | smtp.gmail.com        | Alamat server SMTP Gmail                                 |
+  | SMTP_PORT         | 587                   | Port untuk koneksi TLS                                   |
+  | SMTP_USERNAME     | email pengirim       | Digunakan untuk autentikasi SMTP                         |
+  | SMTP_PASSWORD     | (disembunyikan)      | Password atau App Password untuk login SMTP              |
+  | SMTP_FROM         | email pengirim       | Alamat yang tampil sebagai pengirim                      |
+  | SMTP_TLS          | true                  | Mengaktifkan enkripsi TLS                                |
+
+Ditambahkan konfigurasi SMTP, memungkinkan aplikasi mengirimkan email secara otomatis menggunakan layanan server email. Dalam konteks ini, SMTP (Simple Mail Transfer Protocol) menjadi penghubung antara server aplikasi dan server email, seperti Gmail.
+
+Variabel SMTP_HOST dan SMTP_PORT menentukan alamat dan jalur komunikasi dengan server email. SMTP_USERNAME dan SMTP_PASSWORD digunakan untuk proses autentikasi agar server mengizinkan pengiriman email. SMTP_FROM menunjukkan alamat email yang akan tampil sebagai pengirim. Sementara itu, SMTP_TLS mengaktifkan lapisan keamanan tambahan sehingga proses pengiriman email lebih aman dan terenkripsi.
+
+Dengan konfigurasi ini, aplikasi dapat mengirimkan notifikasi, verifikasi akun, atau pesan otomatis lainnya tanpa perlu intervensi manual. Selain Gmail, SMTP juga dapat dikonfigurasi dengan penyedia email lainnya sesuai kebutuhan.
+
+## Cara Pemakaian Sebagai User
 
 [Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
 
@@ -232,11 +249,10 @@ Tampilan user log-in
 <img width="1918" height="830" alt="image" src="https://github.com/user-attachments/assets/4322c203-e651-497e-a1c8-49000ba45561" />
 
 3. Halaman Utama (Dashboard)
-
+- Tampilan User
 Setelah login, pengguna akan diarahkan ke halaman utama yang menampilkan daftar pertanyaan terbaru dari komunitas. Di bagian atas terdapat menu navigasi untuk berpindah antara Questions, Tags, Users, dan Badges.
 Pengguna bisa membuat pertanyaan baru dengan menekan tombol Create, kemudian mengisi judul, isi pertanyaan, serta menambahkan tag agar mudah ditemukan oleh pengguna lain. 
 <img width="1919" height="829" alt="image" src="https://github.com/user-attachments/assets/f51ee356-7385-48ac-a13b-1a9e506d336e" />
-
 
 4. Membuat Pertanyaan/Ask a Question
 - Klik tombol "Create"
@@ -277,11 +293,51 @@ Beberapa jenis badge yang tersedia antara lain:
 <img width="1919" height="811" alt="image" src="https://github.com/user-attachments/assets/79b266fa-829f-4276-ac57-c68c6b352a69" />
 <img width="1903" height="833" alt="image" src="https://github.com/user-attachments/assets/e6d18c51-807f-4cdf-af85-7874002b892f" />
 
+## Cara Pemakaian Sebagai Admin
+
+[Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
+
+1. Setelah Login sebagai user, berikut adalah tampilan dashboard Admin
+
+<img width="1919" height="824" alt="image" src="https://github.com/user-attachments/assets/70036fbd-2b84-4cfd-9b15-1cafa146e57b" />
+
+<img width="1919" height="818" alt="image" src="https://github.com/user-attachments/assets/b67b9dc2-e2f1-466b-8ca8-87ebf013eabd" />
+
+2. Menu Contents
+
+Menampilkan post Questions dari users dan admin 
+   <img width="1919" height="830" alt="image" src="https://github.com/user-attachments/assets/9ef1a609-f8f4-452d-8aba-1106ab88177d" />
+Menampilkan post Answer dari users dan admin
+<img width="1919" height="828" alt="image" src="https://github.com/user-attachments/assets/93456667-45dd-4f18-acd8-2e56ce17b4e3" />
+
+3. Badges Admin
+   
+Admin dapat melihat dan melakukan aksi (deactivate) dari tiap achivements
+   <img width="1919" height="829" alt="image" src="https://github.com/user-attachments/assets/5289752f-be51-4626-897c-f65bc5fb0bad" />
+   <img width="1919" height="829" alt="image" src="https://github.com/user-attachments/assets/3e5abcad-2c59-4f86-9a64-5b5dbf221d0b" />
+
+4. Appearance
+   
+   Admin dapat mengubah tampilan aplikasi dengan 3 fitur, themes, customize, dan branding
+   <img width="1919" height="828" alt="image" src="https://github.com/user-attachments/assets/4825991e-7ef3-4c70-86ec-2113f2edb915" />
+   <img width="1919" height="828" alt="image" src="https://github.com/user-attachments/assets/cd5283a7-71ed-46dd-9c58-126bf6871ed0" />
+   <img width="1919" height="833" alt="image" src="https://github.com/user-attachments/assets/e9a7e7ee-66fc-4c8b-9b9d-073f9deed5cb" />
+
+5. Settings dan Plugin Aplikasi
+
+   Admin dapat mengubah, menambahkan plugin dan mengakses data aplikasi
+   
+   <img width="271" height="426" alt="image" src="https://github.com/user-attachments/assets/498d9767-be44-4fdb-9901-da7fbae6439e" />
+ 
+
 ## Pembahasan
 
 [Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
 
 Platform lontongsagu (Apache Answer) memberikan solusi praktis untuk membangun sistem tanya jawab seperti forum atau knowledge base internal.
+Aplikasi lontongsagu (Apache Answer) memiliki dua peran utama: **Admin** dan **User**.
+Admin bertanggung jawab untuk pengelolaan konten dan sistem, sementara user berperan sebagai kontributor dalam forum tanya jawab. 
+Pembagian peran ini penting untuk menjaga kualitas diskusi dan mencegah penyalahgunaan sistem.
 
 Sebagai salah satu platform Q&A open source yang banyak digunakan untuk membangun forum tanya jawab mandiri, aplikasi ini menawarkan sejumlah kelebihan, di antaranya:
 -  Self-hosted & Open Source : kontrol penuh atas data dan tampilan aplikasi
