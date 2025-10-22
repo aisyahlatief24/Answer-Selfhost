@@ -284,7 +284,7 @@ lontongsagu Vs Quora Vs Reddit
 
 | Aspek                     | Apache Answer                                      | Quora                                                | Reddit                                                  |
 |---------------------------|---------------------------------------------------|------------------------------------------------------|----------------------------------------------------------|
-| Model hosting & kontrol   | Self-hosted (kontrol penuh atas data & tampilan)   | Publik, dikontrol oleh platform Quora                | Publik, kontrol terbagi (komunitas + subreddit)          |
+| Model hosting & kontrol   | Self-hosted; mengontrol penuh atas data & tampilan   | Publik; dikontrol oleh platform Quora                | Publik; kontrol terbagi (komunitas + subreddit)          |
 | Fokus utama               | Pertanyaan & jawaban (forum Q&A)                   | Q&A formal & mendalam                                | Diskusi komunitas luas & spontan                         |
 | Struktur komunitas        | Tag, voting, komentar, moderasi sendiri            | Profil pengguna, jawaban & vote                      | Subreddit/topic, post & komentar, banyak ragam           |
 | Kustomisasi & branding    | Sangat fleksibel                                  | Terbatas (standar platform)                          | Terbatas untuk “branding sendiri” forum pribadi         |
