@@ -228,7 +228,9 @@ Variabel SMTP_HOST dan SMTP_PORT menentukan alamat dan jalur komunikasi dengan s
 
 Dengan konfigurasi ini, aplikasi dapat mengirimkan notifikasi, verifikasi akun, atau pesan otomatis lainnya tanpa perlu intervensi manual. Selain Gmail, SMTP juga dapat dikonfigurasi dengan penyedia email lainnya sesuai kebutuhan.
 
-## Cara Pemakaian Sebagai User
+## Cara Pemakaian
+
+### Cara Pemakaian Sebagai User
 
 [Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
 
@@ -293,7 +295,7 @@ Beberapa jenis badge yang tersedia antara lain:
 <img width="1919" height="811" alt="image" src="https://github.com/user-attachments/assets/79b266fa-829f-4276-ac57-c68c6b352a69" />
 <img width="1903" height="833" alt="image" src="https://github.com/user-attachments/assets/e6d18c51-807f-4cdf-af85-7874002b892f" />
 
-## Cara Pemakaian Sebagai Admin
+### Cara Pemakaian Sebagai Admin
 
 [Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
 
