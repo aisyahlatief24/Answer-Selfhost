@@ -1,26 +1,26 @@
-**Apache Answer: Self-hosted**
-- [Sekilas Tentang Apache Answer](#sekilas-tentang-apache-answer)
-- [Instalasi](#instalasi)
-- [Konfigurasi (opsional)](#konfigurasi--opsional-)
-- [Cara Pemakaian](#cara-pemakaian)
-- [Pembahasan](#pembahasan)
-- [Kesimpulan](#kesimpulan)
-- [Referensi](#referensi)
+# **lontongsagu (Apache Answer) : Self-hosted**
+
 <img width="1280" height="720" alt="lontongsagu" src="https://github.com/user-attachments/assets/93ca633c-5398-42e8-bcdd-1a02ea372521" />
 
-## Sekilas Tentang Apache Answer
+| [Sekilas Tentang Apache Answer](#sekilas-tentang-apache-answer) | [Instalasi](#instalasi) | [Konfigurasi (opsional)](#konfigurasi-opsional) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Kesimpulan](#kesimpulan) | [Referensi](#referensi) |
+|------------------------------------------------------------------|--------------------------|-----------------------------------------------|-----------------------------------|----------------------------|---------------------------|--------------------------|
 
-Apache Answer adalah aplikasi Q&A (Question and Answer platform) mirip dengan Stack Overflow namun bersifat self-hosted.
-Aplikasi ini mendukung sistem pertanyaan, jawaban, komentar, voting, dan tag sehingga cocok digunakan untuk membangun forum diskusi internal maupun komunitas publik.
 
-Fitur utama:
+## Sekilas Tentang lontongsagu (Apache Answer)
+
+[Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
+
+lontongsagu (Apache Answer) adalah platform Q&A (Question and Answer) berbasis open source yang dapat di-host secara mandiri (self-hosted). Aplikasi ini mendukung berbagai fitur interaktif seperti sistem pertanyaan dan jawaban, komentar, voting, serta penggunaan tag untuk mengelompokkan topik. Dengan dukungan fitur tersebut, platform ini sangat cocok digunakan untuk membangun forum diskusi internal suatu organisasi maupun komunitas publik yang lebih luas.
+
+### Fitur utama:
 - Posting pertanyaan & jawaban
 - Sistem voting (upvote & downvote)
 - Tagging untuk pengelompokan topik
 - Login via email maupun integrasi OAuth (Google, GitHub, dsb)
-- Panel admin untuk mengatur user & konten
 
 ## Instalasi
+
+[Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
 
 Kebutuhan Sistem
 - Unix, Linux, MacOS atau Windows
@@ -28,9 +28,8 @@ Kebutuhan Sistem
 - Docker
 - Microsoft Azure
 - Apache
-- RAM minimal 4
 
-Setup Server 
+### Setup Server 
 1. Login Microsoft Azure (https://portal.azure.com/#home)
    
 2. Klik Virtual Machines
@@ -52,20 +51,14 @@ seperti contoh di bawah ini
 <img width="1019" height="636" alt="image" src="https://github.com/user-attachments/assets/c6211b46-cb33-4b90-a2a9-6073f8220e0e" />
 
 
-
-
-
-
-
-Proses Instalasi:
+### Proses Instalasi:
 
 1. Login ke server menggunakan SSH
-   
 ```bash
 ssh ondeonde@20.196.129.189
 ```
-2. Memastikan paket sistem yang digunakan up-to-date dan install kebutuhan sistem
 
+2. Memastikan paket sistem yang digunakan up-to-date dan install kebutuhan sistem
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install docker.io docker-compose -y
@@ -91,9 +84,11 @@ sudo docker-compose up -d
 ```bash
 sudo docker ps
 ```
+
 7. Kunjungi alamat IP web server kita untuk meneruskan instalasi
 Link : https://answer.apache.org/docs/installation
 <img width="1593" height="806" alt="image" src="https://github.com/user-attachments/assets/22f6d9fd-be83-44c0-a73d-e0c992e8942a" />
+
 8. Install steps Apache Answer
    
    - Step 1: Choose the language
@@ -111,7 +106,7 @@ Link : https://answer.apache.org/docs/installation
    - Step 5: Complete
 <img width="667" height="308" alt="image" src="https://github.com/user-attachments/assets/7d6e9d15-fa62-48af-9be6-ca94a57487d0" />
 
-Setup Domain 
+### Setup Domain 
 
 Buka www.domainesia.com
 
@@ -119,7 +114,8 @@ Buka www.domainesia.com
 
 <img width="1600" height="432" alt="image" src="https://github.com/user-attachments/assets/4e8e8290-d2a9-429a-bb83-5c9647176097" />
 
-Network Setting
+### Network Setting
+
 1. Buka Microsoft Azure -> login -> klik aerver yang telah kamu buat
 
 <img width="1253" height="707" alt="image" src="https://github.com/user-attachments/assets/e017336d-c59a-4ed8-a096-45206bddcbcc" />
@@ -145,7 +141,7 @@ Network Setting
    <img width="1250" height="260" alt="image" src="https://github.com/user-attachments/assets/88336abf-6cd0-476b-9748-857b537969ee" />
 
 
-Setting HTTP dan HTTPS di Command Prompt
+### Setting HTTP dan HTTPS di Command Prompt
 
 1. Login server 
 Masuk ke server VM Azure lewat SSH sebagai user ondeonde
@@ -160,6 +156,7 @@ Masuk ke server VM Azure lewat SSH sebagai user ondeonde
    sudo apt install certbot python3-certbot-nginx   # kalau pakai Nginx
    sudo apt install certbot python3-certbot-apache  # kalau pakai Apache
    ```
+   
 4. Mengecek proses apa yang sedang memakai port (biasanya Nginx atau Apache)
    
    ```bash
@@ -179,16 +176,19 @@ Masuk ke server VM Azure lewat SSH sebagai user ondeonde
    ```bash
    sudo apache2ctl configtest
    ```
+   
 7. Tes di Browser
    
 http  : http://tanya.lontongsagu.web.id
    
 https : https://tanya.lontongsagu.web.id
    
-tanpa semua yang di atas : tanya.lontongsagu.web.id
+Tanpa semua yang di atas : tanya.lontongsagu.web.id
 
 
 ## Konfigurasi (opsional)
+
+[Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
 
 Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
 - batas upload file
@@ -203,20 +203,23 @@ Plugin untuk fungsi tambahan
 
 ## Cara Pemakaian
 
+[Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
+
 1. Akses Halaman Web
+   
    Buka domain yang telah dikonfigurasi, contoh:
 ```bash
 https://tanya.lontongsagu.web.id
 ```
 
 2. Login/Registrasi
+   
 - Pengguna baru dapat membuat akun melalui email atau login langsung dengan Google / GitHub (jika sudah diaktifkan)
+  
 Tampilan user sign-in
 <img width="1919" height="828" alt="image" src="https://github.com/user-attachments/assets/47b76234-b801-4b18-b278-b111731f4148" />
 Tampilan user log-in
 <img width="1918" height="830" alt="image" src="https://github.com/user-attachments/assets/4322c203-e651-497e-a1c8-49000ba45561" />
-
-- Admin dapat menambahkan user langsung lewat panel admin
 
 3. Halaman Utama (Dashboard)
 
@@ -254,33 +257,38 @@ Bagian Badges menampilkan kumpulan penghargaan (achievement) yang diberikan kepa
 Tujuannya adalah untuk memberikan motivasi dan apresiasi kepada pengguna aktif yang berkontribusi positif dalam komunitas.
 Beberapa jenis badge yang tersedia antara lain:
 
-- Getting Started: mencakup aktivitas awal pengguna, seperti membuat profil (Autobiographer), mengedit konten (Editor), memberi vote pertama (First Upvote), atau memberi reaksi (First Reaction).
+- Getting Started : mencakup aktivitas awal pengguna, seperti membuat profil (Autobiographer), mengedit konten (Editor), memberi vote pertama (First Upvote), atau memberi reaksi (First Reaction).
 
-- Community: diberikan bagi pengguna yang membantu menyelesaikan pertanyaan, seperti Solved atau Scholar.
+- Community : diberikan bagi pengguna yang membantu menyelesaikan pertanyaan, seperti Solved atau Scholar.
 
-- Posting: penghargaan untuk kualitas pertanyaan dan jawaban, seperti Good Answer, Great Answer, Nice Question, dan Great Question.
+- Posting : penghargaan untuk kualitas pertanyaan dan jawaban, seperti Good Answer, Great Answer, Nice Question, dan Great Question.
 
 - Badge-badge ini muncul otomatis ketika pengguna mencapai kriteria tertentu, dan dapat dilihat melalui ikon trophy di bagian atas halaman.
 <img width="1919" height="811" alt="image" src="https://github.com/user-attachments/assets/79b266fa-829f-4276-ac57-c68c6b352a69" />
 <img width="1903" height="833" alt="image" src="https://github.com/user-attachments/assets/e6d18c51-807f-4cdf-af85-7874002b892f" />
 
 ## Pembahasan
-Platform Apache Answer memberikan solusi praktis untuk membangun sistem tanya jawab seperti forum atau knowledge base internal.
+
+[Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
+
+Platform lontongsagu (Apache Answer) memberikan solusi praktis untuk membangun sistem tanya jawab seperti forum atau knowledge base internal.
 
 Sebagai salah satu platform Q&A open source yang banyak digunakan untuk membangun forum tanya jawab mandiri, aplikasi ini menawarkan sejumlah kelebihan, di antaranya:
--  Self-hosted & Open Source: kontrol penuh atas data dan tampilan aplikasi
-- Fitur Q&A mirip Stack Overflow: Apache Answer mempunyai konsep forum tanya jawab modern, dengan sistem pertanyaan, jawaban, komentar, voting, serta tagging topik. Hal ini memudahkan komunitas dalam menemukan solusi secara cepat dan terstruktur.
-- Mendukung Integrasi OAuth: Aplikasi ini telah mendukung integrasi login menggunakan akun eksternal seperti Google dan GitHub, sehingga mempermudah pengguna untuk bergabung tanpa perlu registrasi manual
-- Fleksibel: Tampilan Modern dan mudah dikustomisasi untuk menyesuaikan branding atau kebutuhan komunitas tertentu. Desain antarmuka Apache Answer bersih, responsif, dan mudah dipahami pengguna.
-- Cocok untuk Komunitas Internal Maupun Publik: Karena fleksibilitasnya, platform ini dapat digunakan untuk berbagai keperluan, mulai dari forum internal perusahaan, komunitas kampus, hingga forum publik yang berskala lebih besar
+-  Self-hosted & Open Source : kontrol penuh atas data dan tampilan aplikasi
+- Fitur Q&A : lontongsagu (Apache Answer) mempunyai konsep forum tanya jawab modern, dengan sistem pertanyaan, jawaban, komentar, voting, serta tagging topik. Hal ini memudahkan komunitas dalam menemukan solusi secara cepat dan terstruktur.
+- Mendukung Integrasi OAuth: lontongsagu telah mendukung integrasi login menggunakan akun eksternal seperti Google dan GitHub, sehingga mempermudah pengguna untuk bergabung tanpa perlu registrasi manual
+- Fleksibel : Tampilan Modern dan mudah dikustomisasi untuk menyesuaikan branding atau kebutuhan komunitas tertentu. Desain antarmuka lontongsagu bersih, responsif, dan mudah dipahami pengguna.
+- Cocok untuk Komunitas Internal Maupun Publik : Karena fleksibilitasnya, platform ini dapat digunakan untuk berbagai keperluan, mulai dari forum internal perusahaan, komunitas kampus, hingga forum publik yang berskala lebih besar
 
 Sebuah aplikasi pasti juga memiliki kekurangan. Beberapa kekurangan yang dimiliki antara lain:
-- Butuh Konfigurasi Server: proses instalasi relatif teknis bagi pemula
-- Fitur Tambahan Butuh Plugin: tidak semua fungsi tersedia default (misalnya analytics lanjutan, moderasi otomatis)
-- Performa Tergantung Server: jika menggunakan resource terbatas, bisa melambat saat banyak user aktif
+- Butuh Konfigurasi Server : proses instalasi relatif teknis bagi pemula
+- Performa Tergantung Server : jika menggunakan resource terbatas, bisa melambat saat banyak user aktif
 
-lontongsagu Vs Quora Vs Reddit
 ### Poin Perbandingan Utama
+### lontongsagu Vs Quora Vs Reddit
+
+[Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
+
 
 | Aspek                     | Apache Answer                                      | Quora                                                | Reddit                                                  |
 |---------------------------|---------------------------------------------------|------------------------------------------------------|----------------------------------------------------------|
@@ -294,9 +302,14 @@ lontongsagu Vs Quora Vs Reddit
 
 ## Kesimpulan
 
+[Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
+
 Secara keseluruhan, Apache Answer memberikan pengalaman interaktif dan terstruktur dalam berbagi pengetahuan di komunitas.
 Dengan antarmuka yang sederhana, sistem voting, serta fitur badge yang memotivasi partisipasi, aplikasi ini sangat cocok digunakan untuk forum tanya jawab internal organisasi, komunitas kampus, maupun proyek open source.
 
 ## Referensi
+
+[Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
+
 - Repositori GitHub: https://github.com/apache/answer
 - Dokumentasi Resmi: https://answer.apache.org/docs/installation
