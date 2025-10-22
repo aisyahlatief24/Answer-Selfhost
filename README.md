@@ -1,5 +1,4 @@
-**Apache Answer-Selfhosted
-**
+**Apache Answer-Selfhosted**
 - [Sekilas Tentang Apache Answer](#sekilas-tentang-apache-answer)
 - [Instalasi](#instalasi)
 - [Konfigurasi (opsional)](#konfigurasi--opsional-)
