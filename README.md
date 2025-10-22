@@ -28,15 +28,15 @@ lontongsagu (Apache Answer) adalah platform Q&A (Question and Answer) berbasis o
 - Tagging untuk pengelompokan topik pertanyaan
 - Badges, kumpulan achievement kegiatan user di platform
 ### Sebagai Admin :
-- Mengelola pertanyaan, jawaban, dan komentar.
-- Menambahkan atau menghapus tag.
-- Mengatur pengguna (menambah, menonaktifkan akun, atau mengubah peran).
-- Melakukan konfigurasi sistem, seperti SMTP atau pengaturan tampilan.
+- Mengelola pertanyaan, jawaban, dan komentar
+- Menambahkan atau menghapus tag
+- Mengatur pengguna (menambah, menonaktifkan akun, atau mengubah peran)
+- Melakukan konfigurasi sistem, seperti SMTP atau pengaturan tampilan
 ### Sebagai User :
-- Membuat dan menjawab pertanyaan.
-- Memberi komentar dan vote.
-- Mengikuti tag tertentu sesuai minat.
-- Mengedit profil pribadi.
+- Membuat dan menjawab pertanyaan
+- Memberi komentar dan vote
+- Mengikuti tag tertentu sesuai minat
+- Meng-edit profil pribadi
 
 ## Instalasi
 
