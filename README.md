@@ -2,10 +2,10 @@
 
 <img width="1280" height="720" alt="lontongsagu" src="https://github.com/user-attachments/assets/93ca633c-5398-42e8-bcdd-1a02ea372521" />
 
-| [Sekilas Tentang Apache Answer](#sekilas-tentang-apache-answer) | [Instalasi](#instalasi) | [Konfigurasi (opsional)](#konfigurasi-opsional) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Kesimpulan](#kesimpulan) | [Referensi](#referensi) |
+| [Sekilas Tentang Apache Answer](#sekilas-tentang-apache-answer) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Kesimpulan](#kesimpulan) | [Referensi](#referensi) |
 |------------------------------------------------------------------|--------------------------|-----------------------------------------------|-----------------------------------|----------------------------|---------------------------|--------------------------|
 
-## Anggota Kelompok 2_R1
+## Anggota Kelompok 2_P1
 
 | No | Nama Anggota                       | NIM           |
 |----|------------------------------------|---------------|
@@ -126,7 +126,7 @@ Buka www.domainesia.com
 
 ### Network Setting
 
-1. Buka Microsoft Azure -> login -> klik aerver yang telah kamu buat
+1. Buka Microsoft Azure -> login -> klik server yang telah kamu buat
 
 <img width="1253" height="707" alt="image" src="https://github.com/user-attachments/assets/e017336d-c59a-4ed8-a096-45206bddcbcc" />
 
@@ -196,7 +196,7 @@ https : https://tanya.lontongsagu.web.id
 Tanpa semua yang di atas : tanya.lontongsagu.web.id
 
 
-## Konfigurasi (opsional)
+## Konfigurasi
 
 [Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
 
@@ -261,7 +261,7 @@ Melalui menu Users, pengguna dapat melihat daftar anggota komunitas yang terdaft
 Semakin aktif seorang pengguna berpartisipasi dalam forum (misalnya dengan menjawab, memberi vote, atau membuat pertanyaan berkualitas), maka reputasi dan penghargaan yang didapatkan akan semakin tinggi.
 <img width="1919" height="827" alt="image" src="https://github.com/user-attachments/assets/719a1124-a260-43e0-968a-be8cc5bc948e" />
 
-8. Fitur Badges (Penghargaan)
+8. Fitur Badges (Penghargaan/Achievement)
 
 Bagian Badges menampilkan kumpulan penghargaan (achievement) yang diberikan kepada pengguna atas aktivitas tertentu di platform.
 Tujuannya adalah untuk memberikan motivasi dan apresiasi kepada pengguna aktif yang berkontribusi positif dalam komunitas.
@@ -286,7 +286,7 @@ Platform lontongsagu (Apache Answer) memberikan solusi praktis untuk membangun s
 Sebagai salah satu platform Q&A open source yang banyak digunakan untuk membangun forum tanya jawab mandiri, aplikasi ini menawarkan sejumlah kelebihan, di antaranya:
 -  Self-hosted & Open Source : kontrol penuh atas data dan tampilan aplikasi
 - Fitur Q&A : lontongsagu (Apache Answer) mempunyai konsep forum tanya jawab modern, dengan sistem pertanyaan, jawaban, komentar, voting, serta tagging topik. Hal ini memudahkan komunitas dalam menemukan solusi secara cepat dan terstruktur.
-- Mendukung Integrasi OAuth: lontongsagu telah mendukung integrasi login menggunakan akun eksternal seperti Google dan GitHub, sehingga mempermudah pengguna untuk bergabung tanpa perlu registrasi manual
+- Mendukung Integrasi OAuth : lontongsagu telah mendukung integrasi login menggunakan akun eksternal seperti Google dan GitHub, sehingga mempermudah pengguna untuk bergabung tanpa perlu registrasi manual
 - Fleksibel : Tampilan Modern dan mudah dikustomisasi untuk menyesuaikan branding atau kebutuhan komunitas tertentu. Desain antarmuka lontongsagu bersih, responsif, dan mudah dipahami pengguna.
 - Cocok untuk Komunitas Internal Maupun Publik : Karena fleksibilitasnya, platform ini dapat digunakan untuk berbagai keperluan, mulai dari forum internal perusahaan, komunitas kampus, hingga forum publik yang berskala lebih besar
 
