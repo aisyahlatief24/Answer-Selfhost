@@ -25,8 +25,8 @@ lontongsagu (Apache Answer) adalah platform Q&A (Question and Answer) berbasis o
 ### Fitur utama:
 - Posting pertanyaan & jawaban
 - Sistem voting (upvote & downvote)
-- Tagging untuk pengelompokan topik
-- Login via email maupun integrasi OAuth (Google, GitHub, dsb)
+- Tagging untuk pengelompokan topik pertanyaan
+- Badges, kumpulan achievement kegiatan user di platform
 
 ## Instalasi
 
