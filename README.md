@@ -321,5 +321,9 @@ Dengan antarmuka yang sederhana, sistem voting, serta fitur badge yang memotivas
 
 [Kembali ke atas](#sekilas-tentang-lontongsagu-apache-answer)
 
+- Apache Answer: https://answer.apache.org/
 - Repositori GitHub: https://github.com/apache/answer
 - Dokumentasi Resmi: https://answer.apache.org/docs/installation
+- Instalasi Microsoft Azure: https://azure.microsoft.com/en-us/downloads/
+- Reddit (untuk perbandingan): https://redditinc.com/
+- Quora (untuk perbandingan): https://id.quora.com/
