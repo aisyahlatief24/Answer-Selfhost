@@ -2,6 +2,7 @@ Apache Answer-Selfhosted
 
 <img width="1280" height="720" alt="lontongsagu" src="https://github.com/user-attachments/assets/93ca633c-5398-42e8-bcdd-1a02ea372521" />
 
+<a name="Sekilas Tentang Apache Answer"/>
 ## Sekilas Tentang Apache Answer
 
 Apache Answer adalah aplikasi Q&A (Question and Answer platform) mirip dengan Stack Overflow namun bersifat self-hosted.
